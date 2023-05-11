@@ -1,0 +1,15 @@
+Con el ejercicio que se planteo en la siguiente tarea:
+
+https://classroom.google.com/u/0/c/NTQzMTUyNDM2MDA0/a/NTUzNjQyMzA3NzQy/submissions/by-status/and-sort-name/all?hl=es
+Dicho sitio web se utiliza para entrenar un modelo secuencial y predecir el valor de calculo de un numero X.
+
+Ahora debe graficar la perdida agregando en el sitio la librería  tfjs-vis.
+
+Librería 
+
+tfjs-vis:
+https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js
+
+
+Ejemplo de uso de la librería tfjs-vis en un modelo Secuencial con Regresión lineal (solo utilicen el ejemplo para saber como se utiliza el tfjs-vis )
+https://codelabs.developers.google.com/codelabs/tfjs-training-regression?hl=es-419#1
