@@ -1,0 +1,138 @@
+<html>
+  <head>
+    <title>Pruebas código O'Reilly</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+  </head>
+  <body>
+    <div class="container md">
+
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+          <a class="navbar-brand me-0" href="https://github.com/MARnVEL">My GitHub</a>
+          <h4 class="text-white mx-auto mb-0">Tiny TFJS example</h4>
+        </div>
+      </nav>
+
+      <section>
+        <h4>Este es un section para explicar lo que estamos haciendo.</h4>
+      </section>
+      
+      <form action="">
+        <div class="row mt-3">
+
+
+          <div class="mb-3 mx-auto col-lg-6 col-md-6 col-sm-6">
+            <label for="iInputEpocas" class="form-label">
+              Ingrese la cantidad de épocas (en general un número entero mayor a 200):
+            </label>
+            <input
+              value=""
+              type="number"
+              class="form-control mb-2"
+              name="inputEpocas"
+              id="iInputEpocas"
+              aria-describedby="helpId"
+              placeholder="[Ingrese un número entero]"
+              autofocus
+              pattern="[0-9]+"
+              required
+            >
+            <small id="helpId" class="form-text text-muted">
+              La cantidad de épocas es la cantidad de iteraciones que utilizará el modelo para entrenarse. Tenga cuidado! Entre más grande es la cantidad de épocas, más recursos de su ordenador ocupará el modelo.
+              <strong>Se recomienda un máximo de 700 épocas.</strong>
+            </small>
+          </div>
+        </div>
+
+
+        <div class="row mt-3">
+
+          <div class="mb-3 mx-auto col-lg-6 col-md-6 col-sm-6">
+            <label for="iInputX" class="form-label">
+              Ingrese la variable <strong>'x'</strong>:
+            </label>
+            <input
+              disabled
+              value=""
+              type="number"
+              class="form-control mb-2"
+              name="inputX"
+              id="iInputX"
+              aria-describedby="helpId"
+              placeholder="[Ingrese un número]"
+              
+              required
+            >
+            <!-- <small id="helpIdInputX" class="form-text text-muted">
+              La cantidad de épocas es la cantidad de iteraciones que utilizará el modelo para entrenarse. Tenga cuidado! Entre más grande es la cantidad de épocas, más recursos de su ordenador ocupará el modelo.
+              <strong>Se recomienda un máximo de 700 épocas.</strong>
+            </small> -->
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="mb-3 mx-auto mb-3 mx-auto col-lg-6 col-md-6 col-sm-6">
+            <div id="micro-out-div">
+            </div>
+          </div>
+        </div>
+    
+        
+        <div class="row mt-3">
+          <div 
+            class="container-fluid d-flex justify-content-center align-items-center mb-3"
+          >
+            <input 
+              disabled
+              name="" 
+              id="btn_entrenar"
+              class="btn btn-primary ms-0 me-2"
+              type="button"
+              value="Entrenar"
+
+            >
+
+            <input
+              disabled
+              name=""
+              id="btn_predecir"
+              class="btn btn-success ms-2 me-0"
+              type="button"
+              value="Predecir"
+
+            >
+            <!-- <input type="button" value="Entrenar" onclick="run()"> -->
+
+          </div>
+
+        </div>
+      </form>
+      
+    </div>
+    
+    <!-- TensorFlow.js Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+    <!-- tfjs-vis Library for in browser visualization intended for use with TensorFlow.js. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+    <script src="./utilizacion_libreria_tfjs-vis.js"> </script>
+  </body>
+</html>
